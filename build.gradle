@@ -1,0 +1,22 @@
+plugins {
+	id 'fabric-loom' version '1.7.2'
+}
+
+repositories {
+	maven {
+		name = "Fabric"
+		url = "https://maven.fabricmc.net/"
+	}
+	maven {
+		name = "Terraformers"
+		url = "https://maven.terraformersmc.com/releases/"
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:1.21.4"
+	mappings "net.fabricmc:yarn:1.21.4+build.1:v2"
+	modImplementation "net.fabricmc:fabric-loader:0.16.0"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:0.100.8+1.21.4"
+	modImplementation "com.terraformersmc:modmenu:11.0.0"
+}
